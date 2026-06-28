@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>GeeYu's Den</title>
+  <link rel="icon" type="image/png" href="/icon.png">
+  <script>
+    (() => {
+      const a = window.location.pathname.split("/").filter(Boolean);
+      if (window.location.hash || window.location.search || a.length > 0) {
+        document.documentElement.dataset.n6 = "1";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="/styles.css?v=release-v1">
+</head>
+<body>
+  <div class="c0">
+    <header class="c1">
+      <div>
+        <h1>GeeYu's Den</h1>
+      </div>
+      <div class="c2" aria-label="Anime summary">
+        <span><strong id="n1">0</strong> Anime</span>
+      </div>
+    </header>
+
+    <nav class="c3" aria-label="Anime filters">
+      <button class="c4 c5" type="button">All</button>
+      <label class="c6">
+        <span class="c7">Search</span>
+        <input id="n2" type="search" placeholder="Search anime">
+      </label>
+    </nav>
+
+    <main>
+      <section class="c8" aria-labelledby="n3">
+        <div class="c9">
+          <span></span>
+          <h2 id="n3">ANIME</h2>
+          <span></span>
+        </div>
+
+        <div class="c10" aria-label="Anime display controls">
+          <div class="c11" aria-label="Title display controls">
+            <span>Titles:</span>
+            <label>
+              <input type="radio" name="n4" value="a" checked>
+              English
+            </label>
+            <label>
+              <input type="radio" name="n4" value="b">
+              JP / Romaji
+            </label>
+          </div>
+          <div class="c12" aria-label="Theme controls">
+            <span>Theme:</span>
+            <label>
+              <input type="radio" name="n5" value="light">
+              Light
+            </label>
+            <label>
+              <input type="radio" name="n5" value="dark">
+              Dark
+            </label>
+          </div>
+          <div class="c13 c14" aria-label="Site controls">
+            <div class="c15 c16" aria-label="Site picker"></div>
+          </div>
+        </div>
+
+        <div class="c18">
+          <table>
+            <thead>
+              <tr>
+                <th class="c19">#</th>
+                <th class="c20">Image</th>
+                <th>Anime Title</th>
+                <th class="c21">Type</th>
+                <th class="c22">
+                  <div class="c23">
+                    <div class="c15 c16 c17" aria-label="Site picker"></div>
+                  </div>
+                </th>
+                <th class="c24">Tags</th>
+              </tr>
+            </thead>
+            <tbody id="n0">
+              <tr>
+                <td colspan="6" class="c25">Let me cook...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/app.js?v=release-v1"></script>
+</body>
+</html>
